@@ -10,7 +10,7 @@ if (hasDriversLicence) console.log("i can drive");
 
 /////////////////////////////////////////////////
 
-*/
+
 /////////////// functions ////////////////////
 
 function logger() {
@@ -31,3 +31,18 @@ const appleOrangeJuice = fruitprocessor(2, 4);
 
 console.log(appleOrangeJuice);
 /////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////vježba////////////////////////////
+
+function describeCountry(country, population, capitlCity) {
+  return `${country} has ${population} million people and its capital is ${capitlCity}.`;
+}
+
+const country = describeCountry("Finland", 6, "Helsinki");
+console.log(country);
+
+const country2 = describeCountry("croatia", 4, "zagreb");
+console.log(country2);
+*/
+/////////////////////////////////////////////////////
