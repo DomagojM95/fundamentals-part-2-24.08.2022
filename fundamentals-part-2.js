@@ -46,3 +46,22 @@ const country2 = describeCountry("croatia", 4, "zagreb");
 console.log(country2);
 */
 /////////////////////////////////////////////////////
+
+//////////////////////////////// function decalration vs expresionb //////////////////////////////////////
+
+// function declaration
+function caclAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+const age1 = caclAge1(1991);
+console.log(age1);
+
+// function expresion
+
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const age2 = calcAge2(1991);
+console.log(age2);
