@@ -44,7 +44,7 @@ console.log(country);
 
 const country2 = describeCountry("croatia", 4, "zagreb");
 console.log(country2);
-*/
+
 /////////////////////////////////////////////////////
 
 //////////////////////////////// function decalration vs expresionb //////////////////////////////////////
@@ -65,3 +65,42 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(1991);
 console.log(age2);
+
+////////////////////////////////////////////// vježba //////////////////////////////////
+
+function procentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+const procentagee1 = procentageOfWorld1(1441);
+const procentagee2 = procentageOfWorld1(4);
+const procentagee3 = procentageOfWorld1(6);
+console.log(procentagee1, procentagee2, procentagee3);
+
+const procentageOfWorld2 = function (population) {
+  return (population / 7900) * 100;
+};
+
+const procentage1 = procentageOfWorld2(1441);
+const procentage2 = procentageOfWorld2(4);
+const procentage3 = procentageOfWorld2(6);
+console.log(procentage1, procentage2, procentage3);
+*/
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////// Arrow function ///////////////////////
+
+// arrow function
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  //return retirement;
+  return `${firstName} retires in ${retirement} years`;
+};
+
+console.log(yearsUntilRetirement(1991, "Domagoj"));
+console.log(yearsUntilRetirement(1980, "Bob"));
