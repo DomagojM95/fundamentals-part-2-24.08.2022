@@ -85,7 +85,7 @@ const procentage1 = procentageOfWorld2(1441);
 const procentage2 = procentageOfWorld2(4);
 const procentage3 = procentageOfWorld2(6);
 console.log(procentage1, procentage2, procentage3);
-*/
+
 ////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////// Arrow function ///////////////////////
@@ -104,3 +104,28 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, "Domagoj"));
 console.log(yearsUntilRetirement(1980, "Bob"));
+ 
+
+/////////////////////////////////// vježba ///////////////////////
+
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+const populationChina = percentageOfWorld3(1441);
+console.log(populationChina);
+////////////////////////////////////////////////
+*/
+////////////////////// functions calling other functions ////////////////////////
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitprocessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `juice with ${applePieces} apples and ${orangePieces} oranges`;
+  return juice;
+}
+
+console.log(fruitprocessor(2, 3));
