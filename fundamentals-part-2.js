@@ -50,6 +50,7 @@ console.log(country2);
 //////////////////////////////// function decalration vs expresionb //////////////////////////////////////
 
 // function declaration
+
 function caclAge1(birthYear) {
   return 2037 - birthYear;
 }
@@ -113,7 +114,7 @@ const percentageOfWorld3 = (population) => (population / 7900) * 100;
 const populationChina = percentageOfWorld3(1441);
 console.log(populationChina);
 ////////////////////////////////////////////////
-*/
+
 ////////////////////// functions calling other functions ////////////////////////
 
 function cutFruitPieces(fruit) {
@@ -129,3 +130,54 @@ function fruitprocessor(apples, oranges) {
 }
 
 console.log(fruitprocessor(2, 3));
+
+////////////////////////////////////////////////////// vježba////////////////////////////
+
+///////mojeee///////////////////////////////////
+function procentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+
+function describePopulation(country, population) {
+  const populationProsentage = procentageOfWorld1(population);
+  return `${country} has 1441 million people,
+  which is about ${populationProsentage} of the world `;
+}
+
+console.log(describePopulation("china", 1441));
+
+/////// njegovo/////////////////////
+const describePopulation = function (country, population) {
+  const percentage = percentageOfWorld1(population);
+  const description = `${country} has ${population} million
+  people, which is about ${percentage}% of the world.`;
+  console.log(description);
+};
+describePopulation("Portugal", 10);
+describePopulation("China", 1441);
+describePopulation("USA", 332);
+
+*/
+////////////////////////////////////////////////////////////////////////////
+
+////////////////////// reviewing Functions ////////////////////////
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired`);
+    return -1;
+  }
+};
+
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1950, "Mike"));
