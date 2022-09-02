@@ -157,7 +157,7 @@ describePopulation("Portugal", 10);
 describePopulation("China", 1441);
 describePopulation("USA", 332);
 
-*/
+
 ////////////////////////////////////////////////////////////////////////////
 
 ////////////////////// reviewing Functions ////////////////////////
@@ -181,3 +181,28 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1950, "Mike"));
+
+*/
+/////////////////////////////////// coding challenge ////////////////////////////////////////////
+
+const calcAverage = (score1, score2, score3) => {
+  const averageScore = (score1 + score2 + score3) / 3;
+  return averageScore;
+};
+
+const dolphinsAverage = calcAverage(85, 54, 71);
+const koalasAverage = calcAverage(23, 34, 27);
+
+console.log(dolphinsAverage, koalasAverage);
+
+const checkWinner = function (dolphinsAverage, koalasAverage) {
+  if (dolphinsAverage >= 2 * koalasAverage) {
+    console.log(`Dolphins win (${dolphinsAverage} vs ${koalasAverage})`);
+  } else if (koalasAverage >= 2 * dolphinsAverage) {
+    console.log(`koalas wins ${koalasAverage} vs ${dolphinsAverage}`);
+  } else {
+    console.log("nobody wins");
+  }
+};
+
+checkWinner(dolphinsAverage, koalasAverage);
