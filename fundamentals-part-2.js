@@ -182,7 +182,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1950, "Mike"));
 
-*/
+
 /////////////////////////////////// coding challenge ////////////////////////////////////////////
 
 const calcAverage = (score1, score2, score3) => {
@@ -206,3 +206,47 @@ const checkWinner = function (dolphinsAverage, koalasAverage) {
 };
 
 checkWinner(dolphinsAverage, koalasAverage);
+
+*/
+
+//////////////////////////////////////////////////
+
+//////////////////// introdzction Arrays ////////////////////////
+
+const friends = ["perica", "ivica", "matko"];
+console.log(friends);
+
+const years1 = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = " marko";
+console.log(friends);
+
+// vježba
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[2]),
+  calcAge(years[years.length - 1]),
+];
+
+console.log(ages);
+
+//////////////////////////////////////////////////////////////
