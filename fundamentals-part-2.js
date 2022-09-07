@@ -207,7 +207,7 @@ const checkWinner = function (dolphinsAverage, koalasAverage) {
 
 checkWinner(dolphinsAverage, koalasAverage);
 
-*/
+
 
 //////////////////////////////////////////////////
 
@@ -250,3 +250,68 @@ const ages = [
 console.log(ages);
 
 //////////////////////////////////////////////////////////////
+
+
+
+////////////////////// vježba s nikolom //////////////////////
+const a = [1, 2, 3, 4, 5];
+const b = [7, 8, 9, 0, 8];
+
+for (let i = 0; i < a.length; i++) {
+  console.log(a[i]);
+  for (let k = 0; k < a.length; k++) {
+    console.log(b[k]);
+  }
+}
+
+/////////////////////////////////////////////////////////////
+
+
+//////////////////// vježba ////////////////////////
+
+const popilations = [5, 18, 20, 7];
+console.log(popilations.length === 4);
+
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+const procentages = [
+  percentageOfWorld3(popilations[0]),
+  percentageOfWorld3(popilations[1]),
+  percentageOfWorld3(popilations[2]),
+  percentageOfWorld3(popilations[3]),
+];
+
+console.log(procentages);
+
+////////////////////////////////////////////////////
+*/
+//////////////////////////////// basic array oeprations ///////////////////////////
+
+const friends = ["perica", "ivica", "matko"];
+
+// add elements
+const newlenght = friends.push("Domagoj");
+
+console.log(friends);
+console.log(newlenght);
+
+friends.unshift("ivan");
+console.log(friends);
+
+// remove elements
+
+friends.pop(); // last
+const popped = friends.pop(); // last
+console.log(popped);
+console.log(friends);
+
+friends.shift(); // first
+console.log(friends);
+
+console.log(friends.indexOf("ivica"));
+
+console.log(friends.includes("ivica"));
+
+if (friends.includes("ivica")) {
+  console.log("i have a friend ivica");
+}
