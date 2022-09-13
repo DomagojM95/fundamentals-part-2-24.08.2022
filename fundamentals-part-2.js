@@ -284,7 +284,7 @@ const procentages = [
 console.log(procentages);
 
 ////////////////////////////////////////////////////
-*/
+
 //////////////////////////////// basic array oeprations ///////////////////////////
 
 const friends = ["perica", "ivica", "matko"];
@@ -315,3 +315,43 @@ console.log(friends.includes("ivica"));
 if (friends.includes("ivica")) {
   console.log("i have a friend ivica");
 }
+
+
+/////////////////////////////////////////// vježba//////////////////////////////////
+
+const neighbours = ["Bosna", "Mađarska", "slovenija", "italija"];
+
+const newNeighbor = neighbours.push("Utopia");
+
+console.log(neighbours);
+
+const newNeighbor2 = neighbours.pop();
+console.log(neighbours);
+
+if (neighbours.includes("germaniy")) {
+  console.log("Probably  a central European country :D");
+} else {
+  console.log("Probably not a central European country :D");
+}
+
+neighbours[neighbours.indexOf("Bosna")] = "Republic of Bosna";
+
+console.log(neighbours);
+*/
+///////////////////////////////////////////////////////////////////////
+
+const calcTip = function (bill) {
+  if (bill >= 50 && bill <= 300) return (tip = 0.15 * bill);
+  else {
+    return bill * 0.2;
+  }
+};
+
+console.log(calcTip(400));
+
+const bills = [125, 555, 44];
+
+const tips = [calcTip(125), calcTip(555), calcTip(44)];
+console.log(tips);
+
+const total
