@@ -337,7 +337,7 @@ if (neighbours.includes("germaniy")) {
 neighbours[neighbours.indexOf("Bosna")] = "Republic of Bosna";
 
 console.log(neighbours);
-*/
+
 ///////////////////////////////////////////////////////////////////////
 
 const calcTip = function (bill) {
@@ -351,7 +351,22 @@ console.log(calcTip(400));
 
 const bills = [125, 555, 44];
 
-const tips = [calcTip(125), calcTip(555), calcTip(44)];
-console.log(tips);
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips, bills);
 
-const total
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+*/
+
+//////////////////////////////////////////////// introductioon objects //////////////////////////
+
+const domagoj = {
+  firstName: "Domagoj",
+  lastName: "Markopvic",
+  age: 2022 - 1995,
+  job: "tehnicar",
+  friends: ["perica", "pero", "petar"],
+};
+
+////////////////////////////////////////////////////////////////////////
