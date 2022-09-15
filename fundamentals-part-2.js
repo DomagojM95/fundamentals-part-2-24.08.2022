@@ -357,7 +357,7 @@ console.log(tips, bills);
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-*/
+
 
 //////////////////////////////////////////////// introductioon objects //////////////////////////
 
@@ -368,5 +368,38 @@ const domagoj = {
   job: "tehnicar",
   friends: ["perica", "pero", "petar"],
 };
-
+*/
 ////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////   Dot vs. Bracket Notation   /////////////////////
+
+const domagoj = {
+  firstName: "Domagoj",
+  lastName: "Markopvic",
+  age: 2022 - 1995,
+  job: "tehnicar",
+  friends: ["perica", "pero", "petar"],
+};
+console.log(domagoj);
+console.log(domagoj.lastName);
+console.log(domagoj["lastName"]);
+
+const nameKey = "Name";
+console.log(domagoj["first" + nameKey]);
+console.log(domagoj["last" + nameKey]);
+
+const interestedIn = prompt(
+  "sta zelis znati o meni? Biraj izmedu firstName, lastName, age, job i friends"
+);
+
+console.log(domagoj[interestedIn]);
+
+if (domagoj[interestedIn]) {
+  console.log(domagoj[interestedIn]);
+} else {
+  console.log("wrong request");
+}
+
+domagoj.location = "Osijek";
+domagoj["facebook"] = "marka78";
+console.log(domagoj);
