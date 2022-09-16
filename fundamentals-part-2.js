@@ -368,7 +368,7 @@ const domagoj = {
   job: "tehnicar",
   friends: ["perica", "pero", "petar"],
 };
-*/
+
 ////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////   Dot vs. Bracket Notation   /////////////////////
@@ -403,3 +403,58 @@ if (domagoj[interestedIn]) {
 domagoj.location = "Osijek";
 domagoj["facebook"] = "marka78";
 console.log(domagoj);
+
+// Challenge
+
+console.log(
+  `${domagoj.firstName} has ${domagoj.friends.length} friends
+  , and his best friend is called ${domagoj.friends[0]}`
+);
+
+
+//////////////////////////////  vježba   ///////////////////////////////////
+
+
+const myCountry = {
+  country: "finland",
+  population: 6,
+  neighbours: 3,
+  capital: "Helsinki",
+};
+
+console.log(
+  `${myCountry.country} has ${myCountry.population} million finnish-speaking people ${myCountry.neighbours} neighbouring countries and a capital called ${myCountry.capital}`
+);
+
+////////////////////////////////////////////////////////////////////// objest methods /////////////////////////////
+*/
+
+const domagoj = {
+  firstName: "Domagoj",
+  lastName: "Markopvic",
+  birthYear: 1995,
+  job: "tehnicar",
+  friends: ["perica", "pero", "petar"],
+  hasDriverLicence: true,
+
+  //calcAge: function (birthYear) {
+  //return 2037 - birthYear;
+  //},
+
+  //calcAge: function () {
+  //console.log(this);
+  //return 2037 - this.birthYear;
+  //},
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} year old ${
+      domagoj.job
+    } and he has ${this.hasDriverLicence ? "a" : "no"} drives licence`;
+  },
+};
+
+console.log(domagoj.getSummary);
