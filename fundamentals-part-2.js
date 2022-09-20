@@ -427,7 +427,7 @@ console.log(
 );
 
 ////////////////////////////////////////////////////////////////////// objest methods /////////////////////////////
-*/
+
 
 const domagoj = {
   firstName: "Domagoj",
@@ -457,4 +457,43 @@ const domagoj = {
   },
 };
 
-console.log(domagoj.getSummary);
+console.log(domagoj.getSummary)
+
+////////////////////////////////////////////////////////////
+*/
+///////////////////////////////// coding challenge #3///////////////////////
+
+const mark = {
+  firstName: "Mark",
+  lastName: "Miller",
+  weight: 78,
+  hight: 1.69,
+
+  Bmi: function () {
+    this.BMI = this.weight / (this.hight * this.hight);
+    return this.BMI;
+  },
+};
+
+const john = {
+  firstName: "John",
+  lastName: "Smith",
+  weight: 92,
+  hight: 1.95,
+
+  Bmi: function () {
+    this.BMI = this.weight / (this.hight * this.hight);
+    return this.BMI;
+  },
+};
+mark.Bmi();
+john.Bmi();
+console.log(mark.BMI, john.BMI);
+
+console.log(
+  `${mark.firstName}'s BMI (${mark.Bmi()})is higher than ${
+    john.firstName
+  }'s (${john.Bmi()}).`
+);
+
+/////////////////////////////////////////////////////////////////////////////
