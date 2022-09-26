@@ -498,7 +498,7 @@ console.log(
 
 /////////////////////////////////////////////////////////////////////////////
 
-*/
+
 
 //////////////////////////////////////// the for loop ///////////////////////////////////////////////////////////
 
@@ -511,3 +511,57 @@ for (let rep = 1; rep <= 50; rep++) {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
+*/
+
+////////////////////////////////////////
+
+///////////////////////////////////////// looping arrays, breaking and continuing///////////////////////////
+
+const domagoj = [
+  "Domagoj",
+  "Markovic",
+  2037 - 1991,
+  "tehnicar",
+  ["Domagoj", "petar", "ivica"],
+  true,
+];
+
+const types = [];
+
+for (let i = 0; i < domagoj.length; i++) {
+  // reading from domagoj array
+  console.log(domagoj[i], typeof domagoj[i]);
+
+  //// filling types array
+  // types[i] = typeof domagoj[i];
+
+  types.push(typeof domagoj[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+
+// continue
+console.log("only strings ////////////////////");
+for (let i = 0; i < domagoj.length; i++) {
+  if (typeof domagoj[i] !== "string") continue;
+
+  console.log(domagoj[i], typeof domagoj[i]);
+}
+
+console.log("barke with number ////////////////////");
+for (let i = 0; i < domagoj.length; i++) {
+  if (typeof domagoj[i] === "number") break;
+
+  console.log(domagoj[i], typeof domagoj[i]);
+}
