@@ -511,7 +511,7 @@ for (let rep = 1; rep <= 50; rep++) {
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-*/
+
 
 ////////////////////////////////////////
 
@@ -564,4 +564,44 @@ for (let i = 0; i < domagoj.length; i++) {
   if (typeof domagoj[i] === "number") break;
 
   console.log(domagoj[i], typeof domagoj[i]);
+}
+///////////////////////////////////////////////////////
+
+
+/////////////////////// vježba ////////////////////////////////////////////////
+
+const percentageOfWorld1 = (population) => (population / 7900) * 100;
+const popilations = [5, 18, 20, 7];
+const precentages = [];
+
+for (let i = 0; i < popilations.length; i++) {
+  const perc = percentageOfWorld1(popilations[i]);
+  precentages.push(perc);
+}
+
+console.log(precentages);
+////////////////////////////////////////////////////////////////////
+*/
+
+/////////////////////// looping backward and loops in loops////////////////////////////////
+
+const domagoj = [
+  "Domagoj",
+  "Markovic",
+  2037 - 1991,
+  "tehnicar",
+  ["Domagoj", "petar", "ivica"],
+  true,
+];
+
+for (let i = domagoj.length - 1; i >= 0; i--) {
+  console.log(i, domagoj[i]);
+}
+
+for (let execersise = 1; execersise < 4; execersise++) {
+  console.log(`-------------- starting excersise ${execersise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`excersise ${execersise}: lifting weight repetition ${rep}`);
+  }
 }
