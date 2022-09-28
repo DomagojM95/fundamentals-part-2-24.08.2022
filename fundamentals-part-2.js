@@ -581,7 +581,7 @@ for (let i = 0; i < popilations.length; i++) {
 
 console.log(precentages);
 ////////////////////////////////////////////////////////////////////
-*/
+
 
 /////////////////////// looping backward and loops in loops////////////////////////////////
 
@@ -605,3 +605,20 @@ for (let execersise = 1; execersise < 4; execersise++) {
     console.log(`excersise ${execersise}: lifting weight repetition ${rep}`);
   }
 }
+
+*/
+///////////////////// vjezba /////////////////////////////
+
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+//for (let i = 0; i < listOfNeighbours.length; i++) {}
+
+for (let i = 0; i < listOfNeighbours.length; i++)
+  for (let y = 0; y < listOfNeighbours[i].length; y++)
+    console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+///////////////////////////////////////////////////////////////////////////////////////
