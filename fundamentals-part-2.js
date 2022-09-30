@@ -606,7 +606,7 @@ for (let execersise = 1; execersise < 4; execersise++) {
   }
 }
 
-*/
+
 ///////////////////// vjezba /////////////////////////////
 
 const listOfNeighbours = [
@@ -622,3 +622,47 @@ for (let i = 0; i < listOfNeighbours.length; i++)
     console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
 
 ///////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////// the while loop /////////////////////////////
+
+//for (let rep = 1; rep <= 10; rep++) {
+// console.log(`lifting weights repetition ${rep}`);
+//}
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE: lifting weights repetition ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loope is about to end");
+}
+////////////////////////////////////////////////////////
+*/
+/////////////////////////////////// vježba /////////////////////////////
+
+const percentageOfWorld1 = (population) => (population / 7900) * 100;
+const popilations = [5, 18, 20, 7];
+const precentages = [];
+
+// for (let i = 0; i < popilations.length; i++) {
+//   const perc = percentageOfWorld1(popilations[i]);
+//   precentages.push(perc);
+// }
+
+let rep = 0;
+
+while (rep < popilations.length) {
+  const perc = percentageOfWorld1(popilations[rep]);
+  precentages.push(perc);
+  rep++;
+}
+
+console.log(precentages);
+///////////////////////////////////////////////////////////////////////////////
