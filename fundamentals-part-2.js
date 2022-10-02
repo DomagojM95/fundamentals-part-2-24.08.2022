@@ -644,7 +644,7 @@ while (dice !== 6) {
   if (dice === 6) console.log("Loope is about to end");
 }
 ////////////////////////////////////////////////////////
-*/
+
 /////////////////////////////////// vježba /////////////////////////////
 
 const percentageOfWorld1 = (population) => (population / 7900) * 100;
@@ -666,3 +666,27 @@ while (rep < popilations.length) {
 
 console.log(precentages);
 ///////////////////////////////////////////////////////////////////////////////
+*/
+
+////////////////////////// coding challenge #4/////////////////////////////////
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tipsTotals = [];
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+//const calcTip = function (bill) {
+//if (bill >= 50 && bill <= 300) return (tip = 0.15 * bill);
+//else {
+//  return bill * 0.2;
+//}
+//};
+
+for (let i = 0; i < bills.length; i++) {
+  const total = calcTip(bills[i]);
+  tipsTotals.push(total);
+}
+
+console.log(tipsTotals);
